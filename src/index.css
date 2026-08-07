@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-primary: #f8fafc;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #f1f5f9;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
+    --border-color: rgba(15, 23, 42, 0.08);
+    --border-hover: rgba(210, 200, 190, 0.6);
+    --accent-primary: #F2ECE7;
+    --accent-hover: #E3DAD3;
+    --accent-text: #1E1B18;
+    --accent-glow: rgba(242, 236, 231, 0.5);
+    --accent-emerald: #059669;
+    --card-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.05);
+    --card-hover-shadow: 0 20px 40px -15px rgba(210, 200, 190, 0.25);
+  }
+
+  html.dark {
+    --bg-primary: #0b0f17;
+    --bg-secondary: #131a26;
+    --bg-tertiary: #1a2332;
+    --text-primary: #f9fafb;
+    --text-secondary: #9ca3af;
+    --text-muted: #6b7280;
+    --border-color: rgba(255, 255, 255, 0.08);
+    --border-hover: rgba(242, 236, 231, 0.35);
+    --accent-primary: #F2ECE7;
+    --accent-hover: #E3DAD3;
+    --accent-text: #111827;
+    --accent-glow: rgba(242, 236, 231, 0.2);
+    --accent-emerald: #10b981;
+    --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    --card-hover-shadow: 0 20px 40px -15px rgba(242, 236, 231, 0.12);
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    font-weight: 600; /* Semi-Bold across all headings as requested */
+  }
+}
+
+.theme-transitioning,
+.theme-transitioning * {
+  transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out, color 0.35s ease-in-out, box-shadow 0.35s ease-in-out !important;
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--card-shadow);
+  backdrop-filter: blur(12px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--card-hover-shadow);
+  transform: translateY(-4px);
+}
+
+.glass-nav {
+  background-color: rgba(11, 15, 23, 0.88);
+  border-bottom: 1px solid var(--border-color);
+  backdrop-filter: blur(16px);
+}
+
+html.light .glass-nav {
+  background-color: rgba(248, 250, 252, 0.92);
+}
+
+/* Creamy Peach Utility Classes */
+.bg-peach {
+  background-color: #F2ECE7;
+}
+
+.text-peach {
+  color: #F2ECE7;
+}
+
+.border-peach {
+  border-color: rgba(242, 236, 231, 0.4);
+}
+
+/* Primary Action Button - Creamy Peach with dark text & rounded-full geometry */
+.btn-primary {
+  background-color: #F2ECE7;
+  color: #111827;
+  font-weight: 600;
+  border-radius: 9999px;
+  transition: all 0.25s ease;
+}
+
+.btn-primary:hover {
+  background-color: #E3DAD3;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px -5px rgba(242, 236, 231, 0.3);
+}
+
+/* Typography Accent */
+.text-gradient {
+  background: linear-gradient(135deg, var(--text-primary) 30%, #F2ECE7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html.light .text-gradient {
+  background: linear-gradient(135deg, #0f172a 30%, #7c6f64 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F2ECE7;
+}
+
+/* Custom Pulse Badge */
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.08);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s infinite ease-in-out;
+}
+
+/* Floating Parallax Card */
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+}
+
+.animate-float {
+  animation: float-slow 6s ease-in-out infinite;
+}
