@@ -127,10 +127,10 @@ export const ContactPage: React.FC = () => {
             </p>
 
             {/* Two Buttons: 30-Minute Discovery Call & Send Direct Email */}
-            <div className="pt-3 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <div className="pt-3 flex flex-col sm:flex-row items-start sm:items-center gap-3.5 sm:gap-4">
               <button
                 onClick={openDiscoveryModal}
-                className="px-8 py-4 rounded-full bg-[#F2ECE7] hover:bg-[#E3DAD3] text-[#111827] font-semibold text-sm shadow-md transition-all flex items-center justify-center gap-2"
+                className="w-fit px-8 py-4 rounded-full bg-[#F2ECE7] hover:bg-[#E3DAD3] text-[#111827] font-semibold text-sm shadow-md transition-all flex items-center justify-start sm:justify-center gap-2 active:scale-95"
               >
                 <PhoneCall className="w-4 h-4 text-[#111827]" />
                 <span>30-Minute Discovery Call</span>
@@ -138,7 +138,7 @@ export const ContactPage: React.FC = () => {
 
               <a
                 href="mailto:juixcodeweb@gmail.com"
-                className="px-8 py-4 rounded-full bg-slate-200/80 dark:bg-slate-800/80 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-900 dark:text-white font-semibold text-sm border border-slate-300 dark:border-slate-700 transition-all flex items-center justify-center gap-2"
+                className="w-fit px-8 py-4 rounded-full bg-slate-200/80 dark:bg-slate-800/80 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-900 dark:text-white font-semibold text-sm border border-slate-300 dark:border-slate-700 transition-all flex items-center justify-start sm:justify-center gap-2 active:scale-95"
               >
                 <Mail className="w-4 h-4 text-[#F2ECE7]" />
                 <span>Send Direct Email</span>
@@ -357,7 +357,7 @@ export const ContactPage: React.FC = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-4 rounded-full bg-[#F2ECE7] hover:bg-[#E3DAD3] text-[#111827] font-semibold text-sm shadow-md transition-all flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+                  className="w-fit px-8 py-4 rounded-full bg-[#F2ECE7] hover:bg-[#E3DAD3] text-[#111827] font-semibold text-sm shadow-md transition-all flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed active:scale-95"
                 >
                   {isSubmitting ? (
                     <>
@@ -406,7 +406,7 @@ export const ContactPage: React.FC = () => {
 
             <button
               onClick={openDiscoveryModal}
-              className="w-full py-4 rounded-full bg-[#F2ECE7] hover:bg-[#E3DAD3] text-[#111827] font-semibold text-sm transition-all shadow-md flex items-center justify-center gap-2 mt-4"
+              className="w-fit px-8 py-4 rounded-full bg-[#F2ECE7] hover:bg-[#E3DAD3] text-[#111827] font-semibold text-sm transition-all shadow-md flex items-center justify-center gap-2 mt-4 active:scale-95"
             >
               <PhoneCall className="w-4 h-4 text-[#111827]" />
               <span>Book a Discovery Call</span>

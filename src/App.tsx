@@ -5,6 +5,7 @@ import { Navigation } from './components/Navigation';
 import { Footer } from './components/Footer';
 import { DiscoveryModal } from './components/DiscoveryModal';
 import { CaseStudyModal } from './components/CaseStudyModal';
+import { CustomCursor } from './components/CustomCursor';
 
 import { HomePage } from './pages/HomePage';
 import { AboutPage } from './pages/AboutPage';
@@ -69,7 +70,8 @@ export default function App() {
 
           <Footer />
 
-          {/* Interactive Modals */}
+          {/* Interactive Modals & Custom Cursor */}
+          <CustomCursor />
           <DiscoveryModal />
           <CaseStudyModal />
         </div>

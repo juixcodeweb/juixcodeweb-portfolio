@@ -769,43 +769,40 @@ export const TECH_SKILLS: TechSkill[] = [
   { name: 'Framer', category: 'Platform', iconName: 'Sparkles', description: 'Interactive motion websites with buttery smooth component interactions.', level: 'Expert' },
   { name: 'Figma', category: 'Design', iconName: 'Figma', description: 'Comprehensive design systems, token variables, auto-layout 5.0, and interactive prototypes.', level: 'Expert' },
   { name: 'Elementor', category: 'Platform', iconName: 'Maximize', description: 'High-speed custom Elementor Pro modules without bloat.', level: 'Expert' },
-  { name: 'HTML5', category: 'Development', iconName: 'Code', description: 'Semantic markup, accessibility standards, and clean DOM structures.', level: 'Expert' },
-  { name: 'Tailwind CSS', category: 'Development', iconName: 'Palette', description: 'Utility-first custom design systems, responsive grid mechanics, and dynamic dark mode.', level: 'Expert' },
-  { name: 'JavaScript (ES6+)', category: 'Development', iconName: 'Cpu', description: 'Vanilla JS DOM manipulation, asynchronous APIs, event handling, and custom web components.', level: 'Expert' },
-  { name: 'Velo JS', category: 'Development', iconName: 'Terminal', description: 'Custom backend logic, database collections, and third-party API webhooks on Wix.', level: 'Expert' },
-  { name: 'SEO & Core Web Vitals', category: 'Optimization', iconName: 'TrendingUp', description: 'Schema structured data, speed optimization, technical site audits, and rank tracking.', level: 'Expert' },
-  { name: 'AI Design Tools', category: 'Design', iconName: 'Bot', description: 'Utilizing AI for generative image assets, copy ideation, and rapid UX wireframing.', level: 'Expert' }
+  { name: 'UX & UI', category: 'Design', iconName: 'Figma', description: 'Research-backed wireframing, high-converting layouts, and intuitive user experiences.', level: 'Expert' },
+  { name: 'Landing Page', category: 'Design', iconName: 'Sparkles', description: 'High-impact conversion pages designed specifically for campaigns and lead generation.', level: 'Expert' },
+  { name: 'Ecommerce Website', category: 'Development', iconName: 'ShoppingBag', description: 'Bespoke storefronts optimized for mobile conversion and high average order value.', level: 'Expert' },
+  { name: 'Technical SEO', category: 'Optimization', iconName: 'Search', description: 'Schema structured data, site architecture auditing, crawlability, and speed tuning.', level: 'Expert' },
+  { name: 'Search Engine Optimization (SEO)', category: 'Optimization', iconName: 'TrendingUp', description: 'On-page meta strategy, keyword mapping, and organic search ranking growth.', level: 'Expert' },
+  { name: 'Social Management', category: 'Design', iconName: 'Share2', description: 'Brand content alignment, visual asset curation, and cross-platform growth strategy.', level: 'Expert' },
+  { name: 'Website Maintenance', category: 'Optimization', iconName: 'ShieldCheck', description: 'Proactive security monitoring, backups, speed checks, and ongoing UI updates.', level: 'Expert' },
+  { name: 'Website Migration', category: 'Development', iconName: 'RefreshCw', description: 'Flawless platform migrations with zero downtime and guaranteed SEO score retention.', level: 'Expert' }
 ];
 
 export const FAQ_ITEMS: FAQItem[] = [
   {
     category: 'General',
-    question: 'What makes Juixcodeweb different from other web designers?',
-    answer: 'We don’t just create attractive pages; we engineer conversion-focused web assets that solve specific business problems. Combining strategic copywriting, mathematical visual hierarchy, and sub-second load performance, every project is built to deliver measurable ROI.'
+    question: 'What types of websites do you design and build?',
+    answer: 'I design and build business websites, landing pages, eCommerce stores, UI/UX experiences, and website redesigns across platforms such as Wix Studio, Figma, WordPress, Shopify, Framer, Squarespace, and more.'
   },
   {
     category: 'Process',
-    question: 'How long does a typical website project take?',
-    answer: 'Standard landing page or portfolio builds typically take 2 to 3 weeks. Full multi-page business websites or eCommerce stores take between 3 to 6 weeks from strategy to deployment, depending on scope and feedback turnarounds.'
+    question: 'How long does a website project usually take?',
+    answer: "Project timelines depend on the scope, number of pages, functionality, and content requirements. Once I understand your project, I'll provide a clear timeline before we begin."
   },
   {
-    category: 'Technical',
-    question: 'Which platform will my website be built on?',
-    answer: 'We select the platform that best fits your long-term operational goals. We build on Wix Studio, WordPress, Framer, Shopify, Squarespace, or custom React/Tailwind codebases depending on whether you prioritize ease of editing, custom motion, or eCommerce scale.'
+    category: 'Services',
+    question: 'Can you redesign or improve my existing website?',
+    answer: 'Yes. I can redesign an existing website to improve its visual quality, user experience, mobile responsiveness, performance, SEO, and overall conversion potential.'
   },
   {
     category: 'Collaboration',
-    question: 'How do we handle communication across different time zones?',
-    answer: 'Based in Nigeria, we seamlessly serve global clients across North America, Europe, the Middle East, and Asia. We utilize clear asynchronous communication tools (Loom video walk-throughs, Notion project portals) combined with flexible live alignment calls.'
+    question: 'Do you work with clients remotely?',
+    answer: 'Yes. I work with clients worldwide and handle projects remotely through clear communication, scheduled calls, and organized project workflows.'
   },
   {
-    category: 'Post-Launch',
-    question: 'Will I be able to update my website myself after launch?',
-    answer: 'Yes, 100%. Upon deployment, we provide custom, step-by-step video tutorials showing your team how to edit text, swap images, publish new blog posts, or add products without needing a developer.'
-  },
-  {
-    category: 'Pricing',
-    question: 'What are your typical project investment levels?',
-    answer: 'Custom landing pages begin around $1,500 – $2,500. Comprehensive multi-page business websites and eCommerce builds range from $3,500 to $8,000+. We provide fixed transparent quotes with no surprise charges.'
+    category: 'Next Steps',
+    question: 'What happens after I submit an inquiry?',
+    answer: "I'll review your project details and get back to you within 12 hours. If the project is a good fit, we can schedule a discovery call to discuss your goals, requirements, and next steps."
   }
 ];

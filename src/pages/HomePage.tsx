@@ -90,12 +90,12 @@ export const HomePage: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4"
+                className="pt-2 flex flex-col sm:flex-row items-start sm:items-center gap-3.5 sm:gap-4"
               >
                 <button
                   onClick={openDiscoveryModal}
                   id="hero-book-call-btn"
-                  className="px-8 py-4 rounded-full bg-[#F2ECE7] hover:bg-[#E3DAD3] text-[#111827] font-semibold text-base shadow-lg transition-all flex items-center justify-center gap-3 active:scale-95"
+                  className="w-fit px-8 py-4 rounded-full bg-[#F2ECE7] hover:bg-[#E3DAD3] text-[#111827] font-semibold text-base shadow-lg transition-all flex items-center justify-start sm:justify-center gap-3 active:scale-95"
                 >
                   <PhoneCall className="w-5 h-5 text-[#111827]" />
                   <span>Book Discovery Call</span>
@@ -105,10 +105,10 @@ export const HomePage: React.FC = () => {
                 <button
                   onClick={() => setCurrentPage('portfolio')}
                   id="hero-explore-portfolio-btn"
-                  className="px-8 py-4 rounded-full bg-slate-200/80 dark:bg-slate-800/80 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 font-semibold text-base border border-slate-300/60 dark:border-slate-700/60 transition-all flex items-center justify-center gap-2"
+                  className="w-fit px-8 py-4 rounded-full bg-slate-200/80 dark:bg-slate-800/80 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 font-semibold text-base border border-slate-300/60 dark:border-slate-700/60 transition-all flex items-center justify-start sm:justify-center gap-2 active:scale-95"
                 >
                   <span>Explore Portfolio</span>
-                  <ArrowRight className="w-4 h-4 text-[#F2ECE7] dark:text-[#F2ECE7]" />
+                  <ArrowRight className="w-4 h-4 text-[#111827] dark:text-[#F2ECE7]" />
                 </button>
               </motion.div>
 

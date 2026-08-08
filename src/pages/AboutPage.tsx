@@ -4,11 +4,12 @@ import { TECH_SKILLS } from '../data/portfolioData';
 import { 
   Sparkles, 
   PhoneCall, 
-  CheckCircle2
+  CheckCircle2,
+  ArrowRight
 } from 'lucide-react';
 
 export const AboutPage: React.FC = () => {
-  const { openDiscoveryModal } = useNavigation();
+  const { setCurrentPage, openDiscoveryModal } = useNavigation();
 
   const guidingPrinciples = [
     {
@@ -60,13 +61,21 @@ export const AboutPage: React.FC = () => {
               </p>
             </div>
 
-            <div className="pt-2">
+            <div className="pt-2 flex flex-col sm:flex-row items-start sm:items-center gap-3.5 sm:gap-4">
               <button
                 onClick={openDiscoveryModal}
-                className="w-full sm:w-auto px-8 py-4 rounded-full bg-[#F2ECE7] hover:bg-[#E3DAD3] text-[#111827] font-semibold text-sm transition-all shadow-md flex items-center justify-start sm:justify-center gap-2.5"
+                className="w-fit px-8 py-4 rounded-full bg-[#F2ECE7] hover:bg-[#E3DAD3] text-[#111827] font-semibold text-sm transition-all shadow-md flex items-center justify-start sm:justify-center gap-2.5 active:scale-95"
               >
                 <PhoneCall className="w-4 h-4 text-[#111827]" />
                 <span>Schedule Strategic Consultation</span>
+              </button>
+
+              <button
+                onClick={() => setCurrentPage('services')}
+                className="w-fit px-8 py-4 rounded-full bg-slate-200/80 dark:bg-slate-800/80 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 font-semibold text-sm border border-slate-300/60 dark:border-slate-700/60 transition-all flex items-center justify-start sm:justify-center gap-2 active:scale-95"
+              >
+                <span>Explore Services</span>
+                <ArrowRight className="w-4 h-4 text-[#111827] dark:text-[#F2ECE7]" />
               </button>
             </div>
           </div>

@@ -71,7 +71,7 @@ export const Footer: React.FC = () => {
             <button
               onClick={openDiscoveryModal}
               id="footer-discovery-call-btn"
-              className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-[#F2ECE7] hover:bg-[#E3DAD3] text-[#111827] font-semibold text-xs flex items-center justify-start sm:justify-center gap-2.5 shadow-lg transition-all"
+              className="w-fit sm:w-auto px-6 py-3.5 rounded-full bg-[#F2ECE7] hover:bg-[#E3DAD3] text-[#111827] font-semibold text-xs flex items-center justify-start sm:justify-center gap-2.5 shadow-lg transition-all active:scale-95"
             >
               <PhoneCall className="w-4 h-4 text-[#111827]" />
               <span>Book Discovery Call</span>
@@ -82,7 +82,7 @@ export const Footer: React.FC = () => {
               href="https://wa.link/7zoej3"
               target="_blank"
               rel="noreferrer"
-              className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs flex items-center justify-start sm:justify-center gap-2.5 border border-slate-700 transition-all"
+              className="w-fit sm:w-auto px-6 py-3.5 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs flex items-center justify-start sm:justify-center gap-2.5 border border-slate-700 transition-all active:scale-95"
             >
               <MessageCircle className="w-4 h-4 text-emerald-400" />
               <span>Chat on WhatsApp</span>

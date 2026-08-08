@@ -162,13 +162,13 @@ export const Navigation: React.FC = () => {
                 </button>
               ))}
 
-              <div className="pt-4 border-t border-slate-800 flex flex-col gap-3">
+              <div className="pt-4 border-t border-slate-800 flex flex-col gap-3 items-start">
                 <button
                   onClick={() => {
                     setMobileMenuOpen(false);
                     openDiscoveryModal();
                   }}
-                  className="w-full py-3 px-5 rounded-full bg-[#F2ECE7] text-[#111827] font-semibold text-center flex items-center justify-center gap-2 shadow-lg"
+                  className="w-fit py-3 px-6 rounded-full bg-[#F2ECE7] text-[#111827] font-semibold text-sm flex items-center justify-start gap-2 shadow-lg active:scale-95"
                 >
                   <Sparkles className="w-4 h-4 text-[#111827]" />
                   <span>Book Discovery Call</span>

@@ -354,7 +354,7 @@ export const ServicesPage: React.FC = () => {
                 <div className="pt-4 border-t border-slate-200 dark:border-slate-800">
                   <button
                     onClick={openDiscoveryModal}
-                    className="w-full py-3.5 px-5 rounded-full bg-[#F2ECE7] hover:bg-[#E3DAD3] text-[#111827] font-semibold text-xs sm:text-sm transition-all flex items-center justify-between sm:justify-center gap-2 shadow-sm"
+                    className="w-fit px-6 py-3.5 rounded-full bg-[#F2ECE7] hover:bg-[#E3DAD3] text-[#111827] font-semibold text-xs sm:text-sm transition-all flex items-center justify-start sm:justify-center gap-2 shadow-sm active:scale-95"
                   >
                     <span>{getShortCTALabel(srv.title)}</span>
                     <ArrowUpRight className="w-4 h-4 text-[#111827] shrink-0" />
