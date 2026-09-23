@@ -72,7 +72,7 @@ export const CaseStudyModal: React.FC = () => {
                 </div>
                 <div className="relative overflow-hidden rounded-b-xl max-h-[480px]">
                   <img
-                    src={image}
+                    src={caseStudy.desktopMockupImage || selectedProject.desktopImage || image}
                     alt={`${title} Desktop Design`}
                     referrerPolicy="no-referrer"
                     className="w-full h-auto object-cover object-top"
@@ -167,14 +167,14 @@ export const CaseStudyModal: React.FC = () => {
 
               </div>
 
-              {/* 7. Design Process */}
+              {/* 7. Work Delivered */}
               <div className="glass-card rounded-2xl p-6 space-y-4 bg-slate-800/40 border-slate-800">
                 <h4 className="text-sm font-semibold uppercase tracking-wider text-[#F2ECE7] flex items-center gap-2">
                   <Layers className="w-4 h-4 text-[#F2ECE7]" />
-                  Design Process
+                  Work Delivered
                 </h4>
                 <div className="space-y-2">
-                  {caseStudy.designProcess.map((step, idx) => (
+                  {(caseStudy.workDelivered || caseStudy.designProcess).map((step, idx) => (
                     <div key={idx} className="flex items-start gap-3 text-sm text-slate-300">
                       <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                       <span>{step}</span>
@@ -207,7 +207,7 @@ export const CaseStudyModal: React.FC = () => {
                   </div>
                   <div className="rounded-2xl bg-slate-950 p-4 border border-slate-800 overflow-hidden">
                     <img
-                      src={image}
+                      src={caseStudy.desktopMockupImage || selectedProject.desktopImage || image}
                       alt={`${title} Desktop Responsive`}
                       referrerPolicy="no-referrer"
                       className="w-full h-64 sm:h-80 object-cover object-top rounded-xl"
@@ -229,25 +229,29 @@ export const CaseStudyModal: React.FC = () => {
                       <div className="px-3 py-1.5 bg-slate-800 text-[10px] text-slate-400 font-mono text-center border-b border-slate-700">
                         Tablet Viewport (768px)
                       </div>
-                      <img
-                        src={caseStudy.galleryScreenshots[0]?.imageUrl || image}
-                        alt="Tablet View"
-                        referrerPolicy="no-referrer"
-                        className="w-full h-56 object-cover object-top"
-                      />
+                      <div className="bg-slate-950 flex items-center justify-center p-2">
+                        <img
+                          src={caseStudy.tabletImage || selectedProject.tabletImage || caseStudy.galleryScreenshots[0]?.imageUrl || image}
+                          alt={`${title} Tablet View`}
+                          referrerPolicy="no-referrer"
+                          className="w-full h-auto max-h-[380px] sm:max-h-[440px] object-contain rounded-xl"
+                        />
+                      </div>
                     </div>
 
                     {/* Mobile Mockup Frame */}
-                    <div className="sm:col-span-5 max-w-[240px] mx-auto sm:max-w-none w-full rounded-3xl border-4 border-slate-700 bg-slate-900 shadow-xl overflow-hidden">
+                    <div className="sm:col-span-5 max-w-[280px] mx-auto sm:max-w-none w-full rounded-3xl border-4 border-slate-700 bg-slate-900 shadow-xl overflow-hidden">
                       <div className="px-3 py-1.5 bg-slate-800 text-[10px] text-slate-400 font-mono text-center border-b border-slate-700">
                         Mobile Viewport (390px)
                       </div>
-                      <img
-                        src={image}
-                        alt="Mobile View"
-                        referrerPolicy="no-referrer"
-                        className="w-full h-64 object-cover object-top"
-                      />
+                      <div className="bg-slate-950 flex items-center justify-center p-2">
+                        <img
+                          src={caseStudy.mobileImage || selectedProject.mobileImage || image}
+                          alt={`${title} Mobile View`}
+                          referrerPolicy="no-referrer"
+                          className="w-full h-auto max-h-[380px] sm:max-h-[440px] object-contain rounded-xl"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>

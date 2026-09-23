@@ -12,7 +12,8 @@ export type ProjectCategory =
   | 'Fitness' 
   | 'AI' 
   | 'eCommerce' 
-  | 'Personal Brands';
+  | 'Personal Brands'
+  | 'Services';
 
 export interface CaseStudyMetric {
   label: string;
@@ -27,12 +28,15 @@ export interface CaseStudy {
   clientGoal: string;
   challenge: string;
   solution: string;
+  workDelivered?: string[];
   designProcess: string[];
   finalResult: string;
   technologiesUsed: string[];
   keyOutcomes: CaseStudyMetric[];
   desktopMockupImage?: string;
   mobileTabletMockupImage?: string;
+  mobileImage?: string;
+  tabletImage?: string;
   galleryScreenshots: {
     title: string;
     caption: string;
@@ -54,6 +58,9 @@ export interface Project {
   industry: string;
   category: ProjectCategory;
   image: string;
+  desktopImage?: string;
+  tabletImage?: string;
+  mobileImage?: string;
   shortDescription: string;
   year: string;
   client: string;

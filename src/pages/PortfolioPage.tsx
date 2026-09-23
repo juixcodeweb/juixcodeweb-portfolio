@@ -28,14 +28,16 @@ export const PortfolioPage: React.FC = () => {
   const filteredProjects = PROJECTS_DATA.filter((project) => {
     let matchesTab = true;
     if (selectedTab !== 'All') {
-      if (selectedTab === 'Wix Studio') {
-        matchesTab = project.platform === 'Wix Studio';
-      } else if (selectedTab === 'E-commerce') {
-        matchesTab = project.platform === 'Shopify' || project.category === 'eCommerce';
-      } else if (selectedTab === 'Landing Page') {
-        matchesTab = project.shortDescription.toLowerCase().includes('landing');
+      if (selectedTab === 'Website Design') {
+        matchesTab = project.title.toLowerCase().includes('website') || project.shortDescription.toLowerCase().includes('website') || project.category === 'Services';
       } else if (selectedTab === 'Website Redesign') {
         matchesTab = project.shortDescription.toLowerCase().includes('redesign') || project.title.toLowerCase().includes('redesign');
+      } else if (selectedTab === 'Wix Studio') {
+        matchesTab = project.platform === 'Wix Studio' || project.platform === 'Wix';
+      } else if (selectedTab === 'Landing Page') {
+        matchesTab = project.shortDescription.toLowerCase().includes('landing') || project.title.toLowerCase().includes('landing');
+      } else if (selectedTab === 'E-commerce') {
+        matchesTab = project.platform === 'Shopify' || project.category === 'eCommerce' || project.title.toLowerCase().includes('ecommerce');
       }
     }
 
@@ -107,7 +109,7 @@ export const PortfolioPage: React.FC = () => {
               />
               <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-slate-900/90 backdrop-blur-md border border-slate-700 text-white space-y-1">
                 <span className="text-xs font-semibold text-[#F2ECE7] uppercase tracking-wider">Featured Project</span>
-                <p className="text-sm font-semibold">{PROJECTS_DATA[1]?.title || 'Aura Luxury eCommerce Store'}</p>
+                <p className="text-sm font-semibold">{PROJECTS_DATA[1]?.title || 'BryvonHome — Home Services Website Design | eCommerce Website'}</p>
               </div>
             </div>
           </div>

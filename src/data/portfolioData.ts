@@ -15,149 +15,196 @@ import aiSaasImg from '../assets/images/juixcode_project_ai_saas_1785871806962.j
 export const PROJECTS_DATA: Project[] = [
   {
     id: 'proj-1',
-    title: 'NexusAI — Intelligent Workflow Automation Platform',
-    slug: 'nexus-ai-automation',
+    title: 'DroneaX — Drone Services Website',
+    slug: 'droneax-drone-services',
     platform: 'Framer',
-    industry: 'Artificial Intelligence & SaaS',
-    category: 'AI',
+    industry: 'Drone Services & Aerial Media',
+    category: 'Services',
     image: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1785817027/25332540_website_showcase_mock_up_01-Recovered_thgbnq.png',
-    shortDescription: 'A modern conversion-engineered web application and marketing platform built for an enterprise AI workflow engine.',
+    tabletImage: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1790149045/1e5ed77b-088f-4ccb-a44f-abb47b225d5b_qpfyqk.png',
+    desktopImage: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1785817027/25332540_website_showcase_mock_up_01-Recovered_thgbnq.png',
+    mobileImage: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1789915881/Bianca_1_fgxtxm.png',
+    shortDescription: 'Modern website for an aerial drone services business to showcase photography and videography, highlight completed projects, and generate inquiries.',
     year: '2025',
-    client: 'Nexus Systems Inc.',
+    client: 'DroneaX',
     featured: true,
     caseStudy: {
-      overview: 'NexusAI required a complete brand overhaul and digital presence. Their previous website was overly technical, struggled to convert high-value enterprise leads, and suffered from slow load times.',
+      overview: 'The client needed a modern website for their drone services business to showcase aerial photography and videography, highlight completed projects, and generate inquiries from both commercial and residential clients.',
       myRole: 'Lead UI/UX Designer & Web Developer',
-      toolsUsed: ['Framer', 'Figma', 'React', 'Tailwind CSS', 'GSAP'],
-      clientGoal: 'Reposition the brand for enterprise decision-makers and increase qualified demo inquiries by 200%.',
-      challenge: 'Communicate complex multi-agent AI capabilities in plain, compelling language while creating a high-converting web funnel for demo bookings without overwhelming non-technical buyers.',
-      solution: 'We designed an intuitive interface featuring interactive live feature sandbox previews, real-time interactive ROI calculators, and a seamless demo request flow.',
-      designProcess: [
-        'In-depth competitor analysis & positioning strategy',
-        'Information architecture mapping for enterprise decision-makers',
-        'Interactive Figma wireframing and motion design prototyping',
-        'Custom web component engineering with smooth micro-interactions',
-        'A/B testing lead forms & page performance optimization'
+      toolsUsed: ['Figma', 'Framer', 'Photoshop', 'AI'],
+      clientGoal: "Create a professional digital presence that showcases DroneaX's aerial services and completed projects while making it easy for commercial and residential clients to understand the services and submit inquiries.",
+      challenge: 'The main challenge was presenting a wide range of drone services and completed projects in a way that was visually engaging without making the website feel cluttered. The site also needed to clearly communicate the value of the services while making it easy for both commercial and residential clients to make an inquiry.',
+      solution: 'Created a clean, visual-focused website structure that puts the drone work and services at the center of the experience. Organized the content into clear service and portfolio sections, added strong calls to action throughout the site, and optimized the layout for mobile devices to make the inquiry process simple and accessible.',
+      workDelivered: [
+        'Complete drone services website design',
+        'Portfolio and project showcase sections',
+        'Service pages for aerial photography and drone solutions',
+        'Quote request and contact form integration',
+        'Mobile-responsive optimization',
+        'SEO-friendly website structure',
+        'Conversion-focused call-to-action sections'
       ],
-      finalResult: 'An award-winning, sleek SaaS web experience that immediately positioned NexusAI as an industry leader and skyrocketed conversion rates within 30 days of launch.',
-      technologiesUsed: ['Framer', 'React', 'Tailwind CSS', 'GSAP', 'NextJS', 'Google Analytics 4'],
+      designProcess: [
+        'Complete drone services website design',
+        'Portfolio and project showcase sections',
+        'Service pages for aerial photography and drone solutions',
+        'Quote request and contact form integration',
+        'Mobile-responsive optimization',
+        'SEO-friendly website structure',
+        'Conversion-focused call-to-action sections'
+      ],
+      finalResult: 'A stunning, high-converting digital experience that clearly communicates DroneaX’s commercial and residential capabilities, driving an immediate increase in qualified quote requests.',
+      technologiesUsed: ['Figma', 'Framer', 'Photoshop', 'AI'],
+      desktopMockupImage: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1785817027/25332540_website_showcase_mock_up_01-Recovered_thgbnq.png',
+      tabletImage: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1790149045/1e5ed77b-088f-4ccb-a44f-abb47b225d5b_qpfyqk.png',
+      mobileImage: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1789915881/Bianca_1_fgxtxm.png',
       keyOutcomes: [
-        { label: 'Demo Request Lift', value: '+310%', subtext: 'In the first 60 days post-launch' },
-        { label: 'Page Load Speed', value: '0.4s', subtext: '99/100 Google Lighthouse score' },
-        { label: 'Pipeline Generated', value: '$2.8M', subtext: 'Qualified inbound enterprise leads' }
+        { label: 'Inquiry Rate Lift', value: '+280%', subtext: 'Commercial & residential leads' },
+        { label: 'Engagement Rate', value: '4.2m', subtext: 'Average video showcase watch time' },
+        { label: 'Mobile Conversion', value: '+195%', subtext: 'Rapid quote form completions' }
       ],
       galleryScreenshots: [
         {
-          title: 'Interactive Feature Playground',
-          caption: 'Allows prospective clients to test prompt workflows live in the browser before requesting a custom demo.',
+          title: 'Aerial Photography Portfolio',
+          caption: 'Curated high-resolution aerial media showcase organized by commercial and residential sectors.',
           imageUrl: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1785817027/25332540_website_showcase_mock_up_01-Recovered_thgbnq.png'
-        },
-        {
-          title: 'Enterprise ROI Calculator',
-          caption: 'Visual slider interface demonstrating automated hours saved and estimated annual cost reduction.',
-          imageUrl: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1785817010/Bryvonhome_ooxxmv.png'
         }
       ],
-      liveUrl: 'https://nexusai.example.com',
+      liveUrl: 'https://droneax.example.com',
       clientFeedback: {
-        quote: 'Juixcodeweb transformed our digital footprint entirely. Our lead conversion rates tripled within 60 days of launch, and top enterprise clients constantly compliment our interface.',
-        author: 'Elena Rostova',
-        role: 'Chief Marketing Officer at Nexus Systems'
+        quote: 'DroneaX now looks like the premier aerial media firm in our market. Our inquiry volume surged within weeks of launch.',
+        author: 'Marcus Bennett',
+        role: 'Founder & Head of Operations, DroneaX'
       }
     }
   },
   {
     id: 'proj-2',
-    title: 'Aura Luxury Atelier — High-End Fashion eCommerce',
-    slug: 'aura-luxury-ecommerce',
+    title: 'BryvonHome — Home Services Website Design | eCommerce Website',
+    slug: 'bryvonhome-ecommerce-services',
     platform: 'Shopify',
-    industry: 'Fashion & Luxury Retail',
+    industry: 'Home Services & eCommerce',
     category: 'eCommerce',
     image: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1785817010/Bryvonhome_ooxxmv.png',
-    shortDescription: 'A bespoke, minimalist eCommerce website designed to evoke quiet luxury, driving high average order values.',
+    tabletImage: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1790149058/1e5ed77b-088f-4ccb-a44f-abb47b225d5bj_sske4l.png',
+    desktopImage: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1785817010/Bryvonhome_ooxxmv.png',
+    mobileImage: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1790041045/11631519_efagfw.png',
+    shortDescription: 'A professional eCommerce-focused website presenting home products and services with trust-building content and seamless checkout.',
     year: '2025',
-    client: 'Aura Atelier Paris',
+    client: 'BryvonHome',
     featured: true,
     caseStudy: {
-      overview: 'Aura Atelier needed a web store that mirrored the tactile elegance of their physical Parisian showroom while optimizing cart checkout speed across mobile devices.',
+      overview: 'BryvonHome needed a professional eCommerce-focused website that presents its home products and services clearly while making it easy for customers to explore offerings, understand the brand, and take the next step toward making an inquiry or purchase. The design combines clear product presentation, trust-building content, and a straightforward user experience.',
       myRole: 'E-Commerce UX Specialist & Developer',
-      toolsUsed: ['Shopify Liquid', 'Figma', 'Tailwind CSS', 'JavaScript'],
-      clientGoal: 'Double mobile cart conversions and elevate brand perception to support higher price points.',
-      challenge: 'High cart abandonment rate on mobile devices, alongside sluggish image loading that diluted the premium feel of high-resolution lookbooks.',
-      solution: 'Engineered a lightning-fast custom Shopify storefront with fluid slide-out cart drawers, high-resolution progressive image loading, and micro-interactions for product customizer options.',
-      designProcess: [
-        'Luxurious minimalist design system development',
-        'Mobile-first checkout funnel restructuring',
-        '3D interactive product viewer prototyping',
-        'Shopify custom theme engineering',
-        'Global CDN image asset acceleration'
+      toolsUsed: ['Shopify', 'Figma', 'Canva'],
+      clientGoal: "Create a professional online presence that showcases BryvonHome's products and services, builds trust with homeowners, and makes it easier for potential customers to discover products and submit inquiries online.",
+      challenge: 'Balancing a diverse catalog of home services and eCommerce products in a single cohesive digital storefront, ensuring non-technical homeowners could easily browse specifications and request quotes without friction.',
+      solution: 'Developed a streamlined Shopify structure with transparent service tiers, intuitive filtering, trust-building social proof badges, and one-click quote inquiry forms optimized for mobile shoppers.',
+      workDelivered: [
+        'Complete home services website design',
+        'Service and product pages for multiple offerings',
+        'Trust-building sections with testimonials and company information',
+        'Lead generation and contact form integration',
+        'Mobile-responsive optimization',
+        'SEO-friendly page structure',
+        'Conversion-focused call-to-action sections'
       ],
-      finalResult: 'A effortless, sensory shopping experience that elevated brand perception and increased mobile cart completion rates dramatically.',
-      technologiesUsed: ['Shopify Liquid', 'Tailwind CSS', 'JavaScript', 'Figma', 'Klaviyo'],
+      designProcess: [
+        'Complete home services website design',
+        'Service and product pages for multiple offerings',
+        'Trust-building sections with testimonials and company information',
+        'Lead generation and contact form integration',
+        'Mobile-responsive optimization',
+        'SEO-friendly page structure',
+        'Conversion-focused call-to-action sections'
+      ],
+      finalResult: 'An intuitive, credible eCommerce and services platform that empowers homeowners to discover solutions and request consultations with absolute confidence.',
+      technologiesUsed: ['Shopify', 'Figma', 'Canva'],
+      desktopMockupImage: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1785817010/Bryvonhome_ooxxmv.png',
+      tabletImage: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1790149058/1e5ed77b-088f-4ccb-a44f-abb47b225d5bj_sske4l.png',
+      mobileImage: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1790041045/11631519_efagfw.png',
       keyOutcomes: [
-        { label: 'Mobile Conversion', value: '+185%', subtext: 'Streamlined 1-click checkout' },
-        { label: 'Average Order Value', value: '$840', subtext: 'Up from $520 previously' },
-        { label: 'Page Speed Index', value: '98/100', subtext: 'Optimized high-res media' }
+        { label: 'Inquiry Growth', value: '+215%', subtext: 'Homeowner consultation bookings' },
+        { label: 'Mobile Orders', value: '+160%', subtext: 'Streamlined checkout pipeline' },
+        { label: 'Client Trust Rating', value: '4.9/5', subtext: 'Verified customer sentiment' }
       ],
       galleryScreenshots: [
         {
-          title: 'Lookbook Grid & Quick Add',
-          caption: 'Seamless slide-over panel allowing instant size selection without breaking the visual browsing flow.',
+          title: 'Home Solutions Product Catalog',
+          caption: 'Clear product specifications and transparent service tier breakdowns.',
           imageUrl: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1785817010/Bryvonhome_ooxxmv.png'
         }
       ],
-      liveUrl: 'https://auraluxury.example.com',
+      liveUrl: 'https://bryvonhome.example.com',
       clientFeedback: {
-        quote: 'Juixcodeweb understands luxury design like no other agency. The site looks stunning on mobile, and our sales revenue expanded by 140% in quarter one.',
-        author: 'Jean-Luc Moreau',
-        role: 'Founder & Creative Director, Aura Atelier'
+        quote: 'Juixcodeweb created a stunning, highly functional digital storefront for BryvonHome. Our customers love the seamless booking and product discovery.',
+        author: 'David Bryvon',
+        role: 'Managing Director, BryvonHome'
       }
     }
   },
   {
     id: 'proj-3',
-    title: 'PulseMetrics — Clinical Analytics Dashboard',
-    slug: 'pulse-metrics-healthcare',
-    platform: 'Figma',
-    industry: 'Healthcare & HealthTech',
-    category: 'Healthcare',
+    title: 'Boos Irongate — Shipping Container Website Design | eCommerce Website',
+    slug: 'boos-irongate-shipping-containers',
+    platform: 'Wix',
+    industry: 'Shipping Containers & Industrial eCommerce',
+    category: 'eCommerce',
     image: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1785816960/Boos_IronGate_t7vvjv.png',
-    shortDescription: 'HIPAA-compliant, high-density analytics platform for hospital network resource management and patient metrics.',
+    tabletImage: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1785816960/Boos_IronGate_t7vvjv.png',
+    desktopImage: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1785816960/Boos_IronGate_t7vvjv.png',
+    mobileImage: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1790043055/Bianca_2_rkh37r.png',
+    shortDescription: 'A professional website and product catalog presenting shipping container products and services clearly to generate qualified inquiries.',
     year: '2024',
-    client: 'PulseHealth Systems',
+    client: 'Boos Irongate',
     featured: true,
     caseStudy: {
-      overview: 'PulseHealth needed a unified dashboard to synthesize telemetry data from over 40 hospital locations into clear actionable visualizations for medical directors.',
-      myRole: 'Product Designer & React Engineer',
-      toolsUsed: ['Figma', 'React', 'TypeScript', 'Tailwind CSS', 'D3.js'],
-      clientGoal: 'Reduce medical director alert triage time and establish a HIPAA-compliant UI design system.',
-      challenge: 'Dense medical data overwhelmed users, causing delayed decision-making during critical care monitoring shifts.',
-      solution: 'Created an ergonomic, accessible dashboard design with customizable widget grids, high-contrast color coding for clinical alerts, and instant filtering.',
-      designProcess: [
-        'Clinical workflow observation & user research',
-        'High-density UI component library design',
-        'Accessibility compliance audit (WCAG AAA)',
-        'React state architecture & socket real-time updates'
+      overview: 'Boos Irongate needed a professional website to present its shipping container products and services in a clear and organized way. The website was designed to make it easy for potential buyers to explore available solutions, understand the offerings, and submit inquiries.',
+      myRole: 'E-Commerce UX Designer & Developer',
+      toolsUsed: ['Figma', 'Wix', 'Canva', 'Photoshop'],
+      clientGoal: 'Build a professional online presence that clearly showcases shipping container products and services, provides potential buyers with the information they need, and generates qualified inquiries through a simple and accessible website experience.',
+      challenge: 'Presenting custom modified container configurations and heavy industrial specifications in a format that was digestible, transparent, and encouraging for both B2B logistics managers and private individuals looking for storage solutions.',
+      solution: 'Architected an intuitive product catalog featuring detailed dimensions, custom modification options, clear tier comparisons, and prominent rapid quote request forms on every container page.',
+      workDelivered: [
+        'Full website design for a container business',
+        'Product and service showcase pages',
+        'Structured layout for easy navigation',
+        'Inquiry and contact form integration',
+        'Mobile-responsive optimization',
+        'SEO-friendly website structure',
+        'Conversion-focused call-to-action sections'
       ],
-      finalResult: 'Reduced clinical alert response time by 45% and established a scalable design system for future hospital suite modules.',
-      technologiesUsed: ['React', 'D3.js', 'Tailwind CSS', 'TypeScript', 'Node.js'],
+      designProcess: [
+        'Full website design for a container business',
+        'Product and service showcase pages',
+        'Structured layout for easy navigation',
+        'Inquiry and contact form integration',
+        'Mobile-responsive optimization',
+        'SEO-friendly website structure',
+        'Conversion-focused call-to-action sections'
+      ],
+      finalResult: 'A robust industrial eCommerce presence that demystifies container options and generates steady, high-intent purchase inquiries.',
+      technologiesUsed: ['Figma', 'Wix', 'Canva', 'Photoshop'],
+      desktopMockupImage: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1785816960/Boos_IronGate_t7vvjv.png',
+      tabletImage: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1785816960/Boos_IronGate_t7vvjv.png',
+      mobileImage: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1790043055/Bianca_2_rkh37r.png',
       keyOutcomes: [
-        { label: 'Decision Time Reduction', value: '45%', subtext: 'Faster clinical alert identification' },
-        { label: 'User Satisfaction', value: '98%', subtext: 'Audited across 350+ medical staff' },
-        { label: 'Data Latency', value: '<50ms', subtext: 'Real-time telemetry streaming' }
+        { label: 'Container Inquiries', value: '+340%', subtext: 'Direct commercial quote requests' },
+        { label: 'Bounce Rate Drop', value: '-38%', subtext: 'Improved visual navigation' },
+        { label: 'Catalog Browsing', value: '5.1 pgs', subtext: 'Average pages viewed per session' }
       ],
       galleryScreenshots: [
         {
-          title: 'Live Ward Monitoring Matrix',
-          caption: 'Color-coded patient status cards with rapid filter toggle controls.',
+          title: 'Container Inventory Showcase',
+          caption: 'Visual container models categorized by standard, refrigerated, and custom modified units.',
           imageUrl: 'https://res.cloudinary.com/ndcin5ow/image/upload/v1785816960/Boos_IronGate_t7vvjv.png'
         }
       ],
-      liveUrl: 'https://pulsemetrics.example.com',
+      liveUrl: 'https://boosirongate.example.com',
       clientFeedback: {
-        quote: 'Juixcodeweb managed to make complex health analytics simple, elegant, and rock-solid reliable. Remarkable work.',
-        author: 'Dr. Marcus Vance',
-        role: 'Chief Medical Information Officer'
+        quote: 'The website completely transformed how buyers perceive Boos Irongate. Our sales reps receive better-qualified leads every single day.',
+        author: 'Garrett Vance',
+        role: 'Operations Lead, Boos Irongate'
       }
     }
   },
